@@ -1,0 +1,14 @@
+<div *ngIf="config" class="texto-descripcion navegacion">
+    <ul>
+        <li *ngFor="let enlace of config">
+            <a *ngIf="enlace.isExterna" [href]="enlace.enlace" target="_blank">
+                <strong>{{enlace.label}}</strong>
+                <span *ngIf="enlace.descripcion">{{enlace.descripcion}}</span>
+            </a>
+            <a *ngIf="!enlace.isExterna" [routerLink]="enlace.enlace">
+                <strong>{{enlace.label}}</strong>
+                <span *ngIf="enlace.descripcion">{{enlace.descripcion}}</span>
+            </a>
+        </li>
+    </ul>
+</div>
