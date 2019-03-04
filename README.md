@@ -5,6 +5,16 @@ Con este componente podemos generar navegaciones con texto con o sin descripció
 Demo online: [StackBlitz](https://stackblitz.com/edit/angular-725tpz)
 
 #Instalación
+Debemos descargar desde el [Repositorio de la junta de Castilla y León](https://github.com/juntadecastillayleon) las carpetas de la guía de estilos, para poder importar los css, js, fuentes, etc.
+
+Copiar todo dentro de assets, dejando la estructura así:
+```
+assets
+    css
+    js
+    fonts
+    img
+```
 
 ##NPM
 ```shell
